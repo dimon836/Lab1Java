@@ -16,14 +16,16 @@ enum Prices {
     gaming_peripherals(13),
     operating_system(499);
 
-    private final int code;
-    Prices(int code){
-        this.code = code;
+    private final int price;
+    Prices(int price){
+        this.price = price;
     }
-    public int getCode(){ return code;}
+    public int getPrice() {
+        return price;
+    }
     public static List<Integer> getPrices() {
-        return Arrays.asList(body_parts.code, CPU.code, motherboard.code, RAM.code, graphics_processor.code,
-                storage_system.code, power_supply.code, system_cooling1.code, system_cooling2.code,
-                gaming_peripherals.code, operating_system.code);
+        return Arrays.asList(body_parts.price, CPU.price, motherboard.price, RAM.price, graphics_processor.price,
+                storage_system.price, power_supply.price, system_cooling1.price, system_cooling2.price,
+                gaming_peripherals.price, operating_system.price);
     }
 }
