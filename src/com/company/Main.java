@@ -1,9 +1,11 @@
 package com.company;
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 //Насчёт агрегации есть мысль, но она слишком глупая для её реализации :)
+//9-15, 17(агрегация)
 
 public class Main {
     static class Human {
@@ -40,5 +42,22 @@ public class Main {
         System.out.println(list);
         Collections.sort(list);
         System.out.println(list);
+
+        //9
+        StringBuilder allTools = new StringBuilder("Tools: ");
+        allTools.append(Tools.SCREWDRIVER).append("; ").append(Tools.BRADAWL).append("; ")
+                                                                                .append(Tools.WRENCH).append("; ");
+        System.out.println(allTools);
+        //10
+        String allToolsString = allTools.delete(0, "Tools: ".length()).toString();
+        String[] splitTools = allToolsString.split("; ");
+        System.out.println(Arrays.toString(splitTools));
+        //11
+        System.out.println(allToolsString + 3);
+        System.out.println(allToolsString + Boolean.TRUE);
+        System.out.println(allToolsString + "three");
+        System.out.println(allToolsString + allTools);
+        System.out.println(allToolsString + Arrays.asList(1, 2, 3));
+
     }
 }

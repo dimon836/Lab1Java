@@ -1,6 +1,6 @@
 package com.company;
 
-abstract class Shop {
+abstract class Shop implements ShowMethod {
     private boolean parts_for_computer;
     boolean body_parts;
     boolean CPU;
@@ -25,7 +25,7 @@ abstract class Shop {
         return parts_for_computer;
     }
 
-    protected void show() {
+    public void show() {
         System.out.print("Have we got parts for computer?");
         if(isParts_for_computer())
             System.out.println(" Yes.");
