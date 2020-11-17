@@ -4,9 +4,6 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-//Насчёт агрегации есть мысль, но она слишком глупая для её реализации :)
-//9-15, 17(агрегация)
-
 public class Main {
     static class Human {
         boolean collectComputer(boolean body, boolean inside_parts) {
@@ -31,7 +28,7 @@ public class Main {
         }
         System.out.println();
         objB.setInsideSystemBlock(objI);
-        InsideSystemBlock objectI = objB.getInsideSystemBlock();
+        InsideSystemBlock objectI = objB.isInsideSystemBlock();
         if (objectI.isAllInsideParts())
             System.out.println("We have all parts inside.");
         else

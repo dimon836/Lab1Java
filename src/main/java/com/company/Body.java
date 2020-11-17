@@ -23,7 +23,7 @@ class Body extends Shop {
      * Композиция
      */
     // Объект, в каком находится информация о том, что уже находится внутри.
-    public InsideSystemBlock getInsideSystemBlock() {
+    public InsideSystemBlock isInsideSystemBlock() {
         return insideSystemBlock;
     }
 
