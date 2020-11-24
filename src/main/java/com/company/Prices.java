@@ -28,4 +28,10 @@ enum Prices {
                 storage_system.price, power_supply.price, system_cooling1.price, system_cooling2.price,
                 gaming_peripherals.price, operating_system.price);
     }
+
+    public static int getSumPrices() {
+        return body_parts.price + CPU.price + motherboard.price + RAM.price + graphics_processor.price +
+                storage_system.price + power_supply.price + system_cooling1.price + system_cooling2.price +
+                gaming_peripherals.price + operating_system.price;
+    }
 }

@@ -1,6 +1,8 @@
 package com.company;
 
-abstract class Shop implements ShowMethod {
+class Shop implements ShowMethod {
+    private PricesParts pricesParts;
+
     private boolean parts_for_computer;
     boolean body_parts;
     boolean CPU;
@@ -23,6 +25,13 @@ abstract class Shop implements ShowMethod {
 
     public boolean isParts_for_computer() {
         return parts_for_computer;
+    }
+
+    public float getAverage(PricesParts pricesParts, float a, float b, float c) {
+        pricesParts.setBody_parts(a);
+        pricesParts.setCPU(b);
+        pricesParts.setMotherboard(c);
+        return pricesParts.getAverage();
     }
 
     public void show() {

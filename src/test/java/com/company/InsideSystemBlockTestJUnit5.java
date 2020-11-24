@@ -4,23 +4,23 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class InsideSystemBlockTest {
+class InsideSystemBlockTestJUnit5 {
 
     @Test
-    void buyAllParts() {
+    void buyAllParts_BuyIternalComputerParts_True() {
         InsideSystemBlock obj = new InsideSystemBlock();
         obj.buyAllParts();
         assertTrue(obj.isAllInsideParts());
     }
 
     @Test
-    void isAllInsideParts() {
+    void isAllInsideParts_CreateObjectAndCheckMethod_False() {
         InsideSystemBlock obj = new InsideSystemBlock();
         assertFalse(obj.isAllInsideParts());
     }
 
     @Test
-    void isCPU() {
+    void isCPU_SetSome_TrueOrFalse() {
         InsideSystemBlock obj = new InsideSystemBlock();
         obj.setCPU(true);
         assertTrue(obj.isCPU());
@@ -29,7 +29,7 @@ class InsideSystemBlockTest {
     }
 
     @Test
-    void isMotherboard() {
+    void isMotherboard_SetSome_TrueOrFalse() {
         InsideSystemBlock obj = new InsideSystemBlock();
         obj.setMotherboard(true);
         assertTrue(obj.isMotherboard());
@@ -38,7 +38,7 @@ class InsideSystemBlockTest {
     }
 
     @Test
-    void isRAM() {
+    void isRAM_SetSome_TrueOrFalse() {
         InsideSystemBlock obj = new InsideSystemBlock();
         obj.setRAM(true);
         assertTrue(obj.isRAM());
@@ -47,7 +47,7 @@ class InsideSystemBlockTest {
     }
 
     @Test
-    void isGraphics_processor() {
+    void isGraphics_processor_SetSome_TrueOrFalse() {
         InsideSystemBlock obj = new InsideSystemBlock();
         obj.setGraphics_processor(true);
         assertTrue(obj.isGraphics_processor());
@@ -56,7 +56,7 @@ class InsideSystemBlockTest {
     }
 
     @Test
-    void isStorage_system() {
+    void isStorage_system_SetSome_TrueOrFalse() {
         InsideSystemBlock obj = new InsideSystemBlock();
         obj.setStorage_system(true);
         assertTrue(obj.isStorage_system());
@@ -65,7 +65,7 @@ class InsideSystemBlockTest {
     }
 
     @Test
-    void isPower_supply() {
+    void isPower_supply_SetSome_TrueOrFalse() {
         InsideSystemBlock obj = new InsideSystemBlock();
         obj.setPower_supply(true);
         assertTrue(obj.isPower_supply());
@@ -74,7 +74,7 @@ class InsideSystemBlockTest {
     }
 
     @Test
-    void isSystem_cooling1() {
+    void isSystem_cooling1_SetSome_TrueOrFalse() {
         InsideSystemBlock obj = new InsideSystemBlock();
         obj.setSystem_cooling1(true);
         assertTrue(obj.isSystem_cooling1());
@@ -83,7 +83,7 @@ class InsideSystemBlockTest {
     }
 
     @Test
-    void isSystem_cooling2() {
+    void isSystem_cooling2_SetSome_TrueOrFalse() {
         InsideSystemBlock obj = new InsideSystemBlock();
         obj.setSystem_cooling2(true);
         assertTrue(obj.isSystem_cooling2());
@@ -92,7 +92,7 @@ class InsideSystemBlockTest {
     }
 
     @Test
-    void isGaming_peripherals() {
+    void isGaming_peripherals_SetSome_TrueOrFalse() {
         InsideSystemBlock obj = new InsideSystemBlock();
         obj.setGaming_peripherals(true);
         assertTrue(obj.isGaming_peripherals());
@@ -101,7 +101,7 @@ class InsideSystemBlockTest {
     }
 
     @Test
-    void isOperating_system() {
+    void isOperating_system_SetSome_TrueOrFalse() {
         InsideSystemBlock obj = new InsideSystemBlock();
         obj.setOperating_system(true);
         assertTrue(obj.isOperating_system());
@@ -118,7 +118,7 @@ class InsideSystemBlockTest {
 //    }
 
     @Test
-    void setBody() {
+    void setBody_TestCompose_EqualsObjects() {
         InsideSystemBlock obj = new InsideSystemBlock();
         Body objB = new Body();
         obj.setBody(objB);
