@@ -1,5 +1,12 @@
 package com.company;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
+
 class Shop implements ShowMethod {
     private PricesParts pricesParts;
 
@@ -14,6 +21,8 @@ class Shop implements ShowMethod {
     boolean system_cooling1, system_cooling2;
     boolean gaming_peripherals;
     boolean operating_system;
+
+    private Collection<Part> parts = new ArrayList<>();
 
     Shop() {
         setParts_for_computer(true);
@@ -32,6 +41,87 @@ class Shop implements ShowMethod {
         pricesParts.setCPU(b);
         pricesParts.setMotherboard(c);
         return pricesParts.getAverage();
+    }
+
+    public Collection<Part> getParts() {
+        return parts;
+    }
+
+    public Part getByIndexPart(int a) {
+        try {
+            int i = 0;
+            for(Part o : this.getParts()) {
+                if(i==a) {
+                    return o;
+                }
+                i++;
+            }
+        } catch (ArrayIndexOutOfBoundsException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    /*
+    public List<Part> getSpecificPart(Predicate<? super Part> predicate) {
+        ArrayList<Part> finalList = new ArrayList<>();
+        for(Part o: this.getParts()) {
+            if(predicate.test(o)) {
+                finalList.add(o);
+            }
+        }
+        return finalList;
+    } */
+
+    public double getAvgPartsPrice(){
+        return parts
+                .stream()
+                .mapToDouble(Part::getPrice)
+                .average()
+                .orElse(0.0);
+    }
+
+    public String getMinName(double min) {
+        for (int i = 0; i < this.getParts().size(); i++) {
+            if (this.getByIndexPart(i).getPrice() == min) {
+                return this.getByIndexPart(i).getName();
+            }
+        }
+        throw new NullPointerException("Такого числа не существует!(min method)");
+    }
+
+    public String getMaxName(double max) throws Exception {
+        for (int i = 0; i < this.getParts().size(); i++) {
+            if (this.getByIndexPart(i).getPrice() == max) {
+                return this.getByIndexPart(i).getName();
+            }
+        }
+        throw new NullPointerException("Такого числа не существует!(max method)");
+    }
+
+    public Map<String, List<Part>> getDistributedUnits(Predicate<? super Part> predicate){
+        return parts.stream()
+                .collect(Collectors.groupingBy(Part -> predicate.test(Part) ? "true" : "false"));
+    }
+
+    public void showIndexPart(int n) {
+        try {
+            int i = 0;
+            for(Part o : this.getParts()) {
+                if(i==n) {
+                    o.showPart();
+                }
+                i++;
+            }
+        } catch (ArrayIndexOutOfBoundsException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void showAllParts() {
+        for(Part obj: this.getParts()) {
+            obj.showPart();
+        }
     }
 
     public void show() {

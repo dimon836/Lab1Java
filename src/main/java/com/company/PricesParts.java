@@ -4,11 +4,21 @@ public class PricesParts {
     float body_parts;
     float CPU;
     float motherboard;
+    float power_supply;
 
-    public PricesParts(int body_parts, int CPU, int motherboard) {
+    public PricesParts(float body_parts, float CPU, float motherboard, float power_supply) {
         this.body_parts = body_parts;
         this.CPU = CPU;
         this.motherboard = motherboard;
+        this.power_supply = power_supply;
+    }
+
+    public void setPower_supply(float power_supply) {
+        this.power_supply = power_supply;
+    }
+
+    public float getPower_supply() {
+        return power_supply;
     }
 
     public void setBody_parts(float body_parts) {
@@ -36,11 +46,13 @@ public class PricesParts {
     }
 
     public float getPriceSum() {
-        return getPriceBody_parts() + getPriceCPU() + getPriceMotherboard();
+        Operationable<Float> operation;
+        operation = (x,y,z, t)-> (int) (x + y + z + t);
+        return operation.calculate(getPriceBody_parts(), getPriceCPU(), getPriceMotherboard(), getPower_supply());
     }
 
     public float getAverage() {
-        return (getPriceBody_parts() + getPriceCPU() + getPriceMotherboard())/3;
+        return (getPriceBody_parts() + getPriceCPU() + getPriceMotherboard() + getPower_supply())/4;
     }
 
 }
