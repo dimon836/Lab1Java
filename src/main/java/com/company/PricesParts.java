@@ -1,10 +1,11 @@
 package com.company;
 
+
 public class PricesParts {
-    float body_parts;
-    float CPU;
-    float motherboard;
-    float power_supply;
+    private float body_parts;
+    private float CPU;
+    private float motherboard;
+    private float power_supply;
 
     public PricesParts(float body_parts, float CPU, float motherboard, float power_supply) {
         this.body_parts = body_parts;

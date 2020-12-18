@@ -14,7 +14,7 @@ public class Main {
         }
     }
 
-    public static void main(String []args) throws Exception {
+    public static void main(String []args) {
         InsideSystemBlock objI = new InsideSystemBlock();
         Body objB = new Body();
         objI.buyAllParts();
@@ -63,7 +63,7 @@ public class Main {
 
     }
 
-    public static void newMain() throws Exception {
+    public static void newMain() {
         //repair some logic of code
         Part body_parts = new Part("Parts of body", 200,1);
         Part CPU = new Part("CPU", 215, 1);
@@ -111,12 +111,12 @@ public class Main {
                 doubleSummaryStatistics.getMax());
         //By selection condition
         System.out.println("Map with prices parts");
-        System.out.println(objectShop.getDistributedUnits(Part -> Part.getPrice() >= 100));
+        System.out.println(objectShop.getPrices(Part -> Part.getPrice() >= 100));
         //Min
         System.out.println("The cheapest part: " + objectShop.getMinName(doubleSummaryStatistics.getMin()) + ' ' +
                 doubleSummaryStatistics.getMin());
         //Sum of all parts
         System.out.println("Sum of all parts: " + doubleSummaryStatistics.getSum());
-        
+
     }
 }

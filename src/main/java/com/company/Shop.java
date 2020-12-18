@@ -1,15 +1,12 @@
 package com.company;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 class Shop implements ShowMethod {
-    private PricesParts pricesParts;
-
     private boolean parts_for_computer;
     boolean body_parts;
     boolean CPU;
@@ -22,7 +19,7 @@ class Shop implements ShowMethod {
     boolean gaming_peripherals;
     boolean operating_system;
 
-    private Collection<Part> parts = new ArrayList<>();
+    private List<Part> parts = new ArrayList<>();
 
     Shop() {
         setParts_for_computer(true);
@@ -43,7 +40,7 @@ class Shop implements ShowMethod {
         return pricesParts.getAverage();
     }
 
-    public Collection<Part> getParts() {
+    public List<Part> getParts() {
         return parts;
     }
 
@@ -81,6 +78,15 @@ class Shop implements ShowMethod {
                 .orElse(0.0);
     }
 
+//    public List<Part> getAllDepartments(){
+//        return showAllParts(unit -> unit instanceof Part)
+//                .stream()
+//                .map(faculty -> new Part())
+//                .map(Part::getName)
+//                .flatMap(Collection::stream)
+//                .collect(Collectors.toList());
+//    }
+
     public String getMinName(double min) {
         for (int i = 0; i < this.getParts().size(); i++) {
             if (this.getByIndexPart(i).getPrice() == min) {
@@ -90,7 +96,7 @@ class Shop implements ShowMethod {
         throw new NullPointerException("Такого числа не существует!(min method)");
     }
 
-    public String getMaxName(double max) throws Exception {
+    public String getMaxName(double max) {
         for (int i = 0; i < this.getParts().size(); i++) {
             if (this.getByIndexPart(i).getPrice() == max) {
                 return this.getByIndexPart(i).getName();
@@ -99,7 +105,7 @@ class Shop implements ShowMethod {
         throw new NullPointerException("Такого числа не существует!(max method)");
     }
 
-    public Map<String, List<Part>> getDistributedUnits(Predicate<? super Part> predicate){
+    public Map<String, List<Part>> getPrices(Predicate<? super Part> predicate){
         return parts.stream()
                 .collect(Collectors.groupingBy(Part -> predicate.test(Part) ? "true" : "false"));
     }
