@@ -29,22 +29,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="222cff01-e139-44e4-ad4f-db6ae865e222" name="Default Changelist" comment="miss file">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/company/ShopIT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="222cff01-e139-44e4-ad4f-db6ae865e222" name="Default Changelist" comment="add ShopIt test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaLab1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaLab1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1Java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/BodyTestJUnit5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/BodyIT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/InsideSystemBlockTestJUnit5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/InsideSystemBlockIT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/PricesPartsTestMockito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/PricesPartsIT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/PricesParts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/PricesParts.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/Shop.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/Shop.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/company/BodyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/company/BodyTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/company/InsideSystemBlockTestJUnit5.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +106,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.1321004" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="build.tools" />
     <property name="settings.editor.splitter.proportion" value="0.24032587" />
   </component>
   <component name="RecentsManager">
@@ -129,6 +116,10 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dima\IdeaProjects\JavaLab1\target" />
+      <recent name="C:\Users\Dima\IdeaProjects\JavaLab1\src\main\resources" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.company" />
     </key>
@@ -136,7 +127,20 @@
       <recent name="com.company" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PricesPartsIT">
+  <component name="RunManager" selected="Maven.JavaLab1 [test]">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+      <module name="JavaLab1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -208,29 +212,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShopIT.get_GetByIndexPart_CompareClassMethodWithArrayMethod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaLab1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.company" />
-      <option name="MAIN_CLASS_NAME" value="com.company.ShopIT" />
-      <option name="METHOD_NAME" value="get_GetByIndexPart_CompareClassMethodWithArrayMethod" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="JavaLab1 [test]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="-Dtest=TestName" />
+                <option value="test" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.PricesPartsIT" />
         <item itemvalue="JUnit.InsideSystemBlockIT" />
         <item itemvalue="JUnit.BodyTest" />
         <item itemvalue="JUnit.ShopIT" />
-        <item itemvalue="JUnit.ShopIT.get_GetByIndexPart_CompareClassMethodWithArrayMethod" />
       </list>
     </recent_temporary>
   </component>
@@ -280,7 +294,7 @@
       <workItem from="1608466213562" duration="2000" />
       <workItem from="1608548605731" duration="811000" />
       <workItem from="1608732019880" duration="725000" />
-      <workItem from="1609100813738" duration="4336000" />
+      <workItem from="1609100813738" duration="7265000" />
     </task>
     <task id="LOCAL-00001" summary="UpdateClasses">
       <created>1603190618382</created>
@@ -401,7 +415,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608282872184</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="add ShopIt test">
+      <created>1609106598208</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1609106598208</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -478,6 +499,21 @@
     <MESSAGE value="add functional" />
     <MESSAGE value="add .gitignore" />
     <MESSAGE value="miss file" />
-    <option name="LAST_COMMIT_MESSAGE" value="miss file" />
+    <MESSAGE value="add ShopIt test" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ShopIt test" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/JavaLab1$PricesPartsIT.ic" NAME="PricesPartsIT Coverage Results" MODIFIED="1609106439624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.company.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/JavaLab1$BodyTest.ic" NAME="BodyTest Coverage Results" MODIFIED="1609106401008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.company.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/JavaLab1$ShopIT.ic" NAME="ShopIT Coverage Results" MODIFIED="1609106364351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.company.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/JavaLab1$InsideSystemBlockIT.ic" NAME="InsideSystemBlockIT Coverage Results" MODIFIED="1609106423294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.company.*</FILTER>
+    </SUITE>
   </component>
 </project>
