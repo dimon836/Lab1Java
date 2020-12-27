@@ -3,7 +3,7 @@ package com.company;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-class InsideSystemBlockTestJUnit5 {
+class InsideSystemBlockIT {
     @Test
     void buyAllParts_BuyIternalComputerParts_True() {
         InsideSystemBlock obj = new InsideSystemBlock();

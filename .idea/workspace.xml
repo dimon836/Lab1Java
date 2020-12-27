@@ -29,7 +29,23 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="222cff01-e139-44e4-ad4f-db6ae865e222" name="Default Changelist" comment="add .gitignore" />
+    <list default="true" id="222cff01-e139-44e4-ad4f-db6ae865e222" name="Default Changelist" comment="miss file">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/company/ShopIT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaLab1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaLab1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1Java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/BodyTestJUnit5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/BodyIT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/InsideSystemBlockTestJUnit5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/InsideSystemBlockIT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/PricesPartsTestMockito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/PricesPartsIT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/PricesParts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/PricesParts.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/Shop.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/Shop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/company/BodyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/company/BodyTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/company/InsideSystemBlockTestJUnit5.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,10 +58,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -65,7 +81,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="fullLab" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -88,7 +104,7 @@
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/company" />
@@ -103,7 +119,8 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.1321004" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.splitter.proportion" value="0.24032587" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -119,33 +136,101 @@
       <recent name="com.company" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
-      <module name="JavaLab1" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PricesPartsIT">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BodyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaLab1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.BodyTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InsideSystemBlockIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaLab1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.InsideSystemBlockIT" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PricesPartsIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaLab1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.PricesPartsIT" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaLab1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.ShopIT" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopIT.get_GetByIndexPart_CompareClassMethodWithArrayMethod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaLab1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.ShopIT" />
+      <option name="METHOD_NAME" value="get_GetByIndexPart_CompareClassMethodWithArrayMethod" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.PricesPartsIT" />
+        <item itemvalue="JUnit.InsideSystemBlockIT" />
+        <item itemvalue="JUnit.BodyTest" />
+        <item itemvalue="JUnit.ShopIT" />
+        <item itemvalue="JUnit.ShopIT.get_GetByIndexPart_CompareClassMethodWithArrayMethod" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +273,14 @@
       <workItem from="1607609205417" duration="6524000" />
       <workItem from="1607692673296" duration="3053000" />
       <workItem from="1607890835874" duration="20322000" />
-      <workItem from="1608281600653" duration="1142000" />
+      <workItem from="1608281600653" duration="1246000" />
+      <workItem from="1608293509630" duration="11000" />
+      <workItem from="1608294214391" duration="273000" />
+      <workItem from="1608464128133" duration="1233000" />
+      <workItem from="1608466213562" duration="2000" />
+      <workItem from="1608548605731" duration="811000" />
+      <workItem from="1608732019880" duration="725000" />
+      <workItem from="1609100813738" duration="4336000" />
     </task>
     <task id="LOCAL-00001" summary="UpdateClasses">
       <created>1603190618382</created>
@@ -302,11 +394,28 @@
       <option name="project" value="LOCAL" />
       <updated>1608282749445</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="miss file">
+      <created>1608282872184</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1608282872184</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -353,6 +462,9 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/Lab1Java" />
+    </ignored-roots>
     <MESSAGE value="UpdateClasses" />
     <MESSAGE value="Change code to price in Prices." />
     <MESSAGE value="add 4,9,10,11" />
@@ -365,6 +477,7 @@
     <MESSAGE value="branch to merge after lab" />
     <MESSAGE value="add functional" />
     <MESSAGE value="add .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="add .gitignore" />
+    <MESSAGE value="miss file" />
+    <option name="LAST_COMMIT_MESSAGE" value="miss file" />
   </component>
 </project>

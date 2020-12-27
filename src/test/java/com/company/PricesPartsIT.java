@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
-public class PricesPartsTestMockito {
+public class PricesPartsIT {
     @Test
     void divide_DivideRealNumbers_Quotient() {
         PricesParts pricesParts = Mockito.mock(PricesParts.class);
